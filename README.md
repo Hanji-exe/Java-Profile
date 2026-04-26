@@ -2,25 +2,6 @@
 
 A professional personal portfolio website built for a 2nd-year BSIT student at the Polytechnic University of the Philippines.
 
-## 🚀 Features
-- **Modern Dark UI**: Sleek dark mode design with vibrant blue accents.
-- **Responsive Design**: Fully functional on mobile, tablet, and desktop.
-- **Filtering System**: Interactive categorization for activities and quizzes.
-- **Scroll Animations**: Smooth fade-in effects using Intersection Observer API.
-- **Performance Optimized**: Built with Vite for lightning-fast development and builds.
-
-## 🛠️ Tech Stack
-- **Framework**: Vite + React
-- **Data Store**: Centralized JSON (`src/data/portfolioData.json`)
-- **Styling**: Vanilla CSS (Separate component-level styles)
-- **Icons**: Font Awesome (CDN)
-- **Fonts**: Poppins & Inter (Google Fonts)
-
-## 📂 Data Customization
-To update your personal information, activities, or social links:
-1. Navigate to `src/data/portfolioData.json`.
-2. Edit the fields inside the JSON file.
-3. The website will automatically update with your new content!
 
 ## 📦 Setup & Installation
 
