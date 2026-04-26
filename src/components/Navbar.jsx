@@ -36,7 +36,8 @@ const Navbar = () => {
                             className={`nav-link ${location.pathname === link.href ? 'active-link' : ''}`}
                             onClick={closeMenu}
                         >
-                            {link.name}
+                            <i className={`${link.icon} nav-icon`}></i>
+                            <span className="nav-text">{link.name}</span>
                         </Link>
                     ))}
                 </div>

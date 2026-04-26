@@ -49,6 +49,13 @@
     color: var(--text-muted);
     transition: var(--transition-smooth);
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-icon {
+    display: none; /* Hidden on desktop */
 }
 
 .nav-link:hover {
@@ -66,8 +73,12 @@
     transition: var(--transition-smooth);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after, .nav-link.active-link::after {
     width: 100%;
+}
+
+.nav-link.active-link {
+    color: var(--primary);
 }
 
 .hamburger {
@@ -84,45 +95,64 @@
     transition: var(--transition-smooth);
 }
 
+/* Mobile Bottom Navbar Redesign */
 @media (max-width: 768px) {
     .navbar {
-        top: 1rem;
-        width: 95%;
-        border-radius: 20px;
+        top: auto;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 450px;
+        padding: 1rem;
+        border-radius: 25px;
+        background: rgba(10, 12, 16, 0.9);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-logo {
+        display: none; /* Hide logo on mobile bottom bar for clean look */
+    }
+
+    .navbar-container {
+        justify-content: center;
+        width: 100%;
     }
 
     .navbar-links {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        flex-direction: column;
-        background: var(--bg-deep);
         width: 100%;
-        text-align: center;
-        transition: 0.4s;
-        padding: 2rem 0;
-        border-bottom: 1px solid var(--glass-border);
+        justify-content: space-around;
+        gap: 0;
     }
 
-    .navbar-links.active {
-        top: 0;
+    .nav-link {
+        flex-direction: column;
+        gap: 0.3rem;
+        font-size: 0.7rem;
+        color: var(--text-muted);
+    }
+
+    .nav-icon {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .nav-link::after {
+        display: none; /* Hide the line under links on mobile */
+    }
+
+    .nav-link.active-link {
+        color: var(--primary);
+        transform: translateY(-5px);
+    }
+
+    .nav-link.active-link .nav-icon {
+        color: var(--primary);
+        text-shadow: 0 0 10px var(--primary-glow);
     }
 
     .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        display: none; /* No hamburger needed for bottom tab bar */
     }
 }
-
-.nav-link.active-link { color: var(--text-main); } .nav-link.active-link::after { width: 100%; }

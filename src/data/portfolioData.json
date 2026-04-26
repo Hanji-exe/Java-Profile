@@ -13,19 +13,23 @@
   "navLinks": [
     {
       "name": "Home",
-      "href": "/"
+      "href": "/",
+      "icon": "fas fa-home"
     },
     {
       "name": "Midterm",
-      "href": "/midterm"
+      "href": "/midterm",
+      "icon": "fas fa-graduation-cap"
     },
     {
       "name": "Final",
-      "href": "/final"
+      "href": "/final",
+      "icon": "fas fa-flag-checkered"
     },
     {
       "name": "Contact",
-      "href": "/connect"
+      "href": "/connect",
+      "icon": "fas fa-envelope"
     }
   ],
   "midterm": {

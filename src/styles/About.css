@@ -218,18 +218,41 @@
 }
 
 @media (max-width: 768px) {
+    .about-section {
+        padding-top: 100px;
+        padding-bottom: 120px; /* Space for bottom navbar */
+    }
+
     .hero-name {
-        font-size: 3.5rem;
+        font-size: 3rem;
         white-space: normal;
+        line-height: 1.2;
     }
 
     .hero-cta {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
     .cta-button {
         width: 100%;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .hero-image-side {
+        max-width: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-bio {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .academic-info {
+        text-align: left;
+        align-self: flex-start;
     }
 }
 

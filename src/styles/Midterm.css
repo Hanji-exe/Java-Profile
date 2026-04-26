@@ -334,15 +334,87 @@
 }
 
 @media (max-width: 768px) {
-    .modal-content {
+    .midterm-page {
+        padding-top: 100px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 120px; /* Space for bottom navbar */
+    }
+
+    .midterm-reflection-header {
         padding: 2rem;
+        border-radius: 25px;
+        margin-bottom: 4rem;
+    }
+
+    .reflection-title-main {
+        font-size: 1.8rem;
+    }
+
+    .reflection-content-body p {
+        font-size: 0.95rem;
+    }
+
+    .reflection-footer-alt {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .quote-text {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .grid-header-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .midterm-grid-new {
+        gap: 4rem;
+    }
+
+    .cards-wrapper {
+        grid-template-columns: 1fr; /* Force single column on mobile */
+        gap: 1.5rem;
+    }
+
+    .academic-card {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .card-title-main {
+        font-size: 1.3rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+        border-radius: 25px;
+        gap: 2rem;
     }
     
     .modal-title-main {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .modal-header-info {
+        padding-top: 2rem;
+    }
+
+    .close-modal {
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.5rem;
     }
     
     .pdf-iframe {
-        height: 400px;
+        height: 350px;
+    }
+
+    .modal-desc-main {
+        font-size: 0.9rem;
     }
 }
