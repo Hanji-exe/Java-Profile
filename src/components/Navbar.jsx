@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import portfolioData from '../data/portfolioData.json';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,20 +24,20 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
-                <a href="#about" className="navbar-logo">
+                <Link to="/" className="navbar-logo" onClick={closeMenu}>
                     {personal.firstName}<span>{personal.lastName}</span>
-                </a>
+                </Link>
 
                 <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                     {navLinks.map((link) => (
-                        <a 
+                        <Link 
                             key={link.name} 
-                            href={link.href} 
-                            className="nav-link"
+                            to={link.href} 
+                            className={`nav-link ${location.pathname === link.href ? 'active-link' : ''}`}
                             onClick={closeMenu}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 

@@ -9,7 +9,7 @@ const About = () => {
             <div className="about-container">
                 <div className="hero-image-side">
                     <div className="image-wrapper">
-                        <img src="/biggerphoto.png" alt={`${personal.firstName} ${personal.lastName}`} className="hero-img" />
+                        <img src={personal.avatar} alt={`${personal.firstName} ${personal.lastName}`} className="hero-img" />
                         <div className="image-overlay"></div>
                     </div>
                     <div className="hero-glow"></div>
@@ -22,26 +22,21 @@ const About = () => {
                     
                     <div className="hero-tagline">
                         <span className="tag-line"></span>
-                        <h2 className="hero-title">{personal.title}</h2>
+                        <h2 className="hero-title">{personal.course}</h2>
+                    </div>
+
+                    <div className="academic-info">
+                        <p className="school-name">{personal.school}</p>
+                        <p className="section-name">{personal.section}</p>
                     </div>
                     
                     <p className="hero-bio">
-                        {personal.bio}
+                        {personal.intro}
                     </p>
 
-                    <div className="hero-education">
-                        <div className="edu-minimal-card">
-                            <i className="fas fa-graduation-cap"></i>
-                            <div className="edu-details">
-                                <h3>{personal.education.school}</h3>
-                                <p>{personal.education.degree}</p>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="hero-cta">
-                        <a href="#activities" className="cta-button primary">View My Work</a>
-                        <a href="#connect" className="cta-button secondary">Get in Touch</a>
+                        <a href="/midterm" className="cta-button primary">Explore Midterm Page</a>
+                        <a href="/contact" className="cta-button secondary">Contact Info</a>
                     </div>
                 </div>
             </div>

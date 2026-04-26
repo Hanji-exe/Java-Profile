@@ -1,12 +1,20 @@
 import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Activities from './components/Activities';
-import Reflection from './components/Reflection';
+import Midterm from './components/Midterm';
+import Final from './components/Final';
 import Connect from './components/Connect';
 import './App.css';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [location]);
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -26,16 +34,18 @@ function App() {
     return () => {
       revealElements.forEach((el) => observer.unobserve(el));
     };
-  }, []);
+  }, [location]); // Re-run observer on route change
 
   return (
     <div className="app">
       <Navbar />
       <main>
-        <About />
-        <Activities />
-        <Reflection />
-        <Connect />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/midterm" element={<Midterm />} />
+          <Route path="/final" element={<Final />} />
+          <Route path="/contact" element={<Connect />} />
+        </Routes>
       </main>
     </div>
   );

@@ -2,134 +2,144 @@
   "personal": {
     "firstName": "Fahad",
     "lastName": "Hadji Esmael",
-    "title": "2nd Year BSIT Student",
-    "university": "Polytechnic University of the Philippines",
+    "course": "Object-Oriented Programming",
+    "school": "Polytechnic University of the Philippines",
+    "section": "BSIT 2-1",
+    "title": "IT Student & Aspiring Developer",
+    "intro": "This e-portfolio presents my Midterm Project in Object-Oriented Programming. It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts through Java implementation.",
     "bio": "I'm a 2nd-year BSIT student at PUP who enjoys coding and learning new technologies. I'm passionate about software development and continuously improving my skills in Java and OOP concepts. I aim to become a full-stack developer in the future.",
-    "avatar": "/placeholder-avatar.png",
-    "education": {
-      "school": "Polytechnic University of the Philippines",
-      "degree": "BS Information Technology",
-      "period": "2024 – Present"
-    }
+    "avatar": "/biggerphoto.png"
   },
   "navLinks": [
-    {
-      "name": "About",
-      "href": "#about"
-    },
-    {
-      "name": "Activities",
-      "href": "#activities"
-    },
-    {
-      "name": "Reflection",
-      "href": "#reflection"
-    },
-    {
-      "name": "Connect",
-      "href": "#connect"
-    }
+    { "name": "Home", "href": "/" },
+    { "name": "Midterm", "href": "/midterm" },
+    { "name": "Final", "href": "/final" },
+    { "name": "Contact", "href": "/contact" }
   ],
-  "activities": [
-    {
-      "title": "All About Me",
-      "type": "Activity",
-      "status": "Submitted Feb 17, 2026",
-      "score": "30"
+  "midterm": {
+    "reflection": {
+      "title": "Midterm Reflection",
+      "semester": "Midterm Semester 2025-2026",
+      "quote": "Mastery of Java and OOP concepts is achieved through repeated practice and a clear understanding of how programming languages serve different problem-solving contexts.",
+      "content": [
+        "In this midterm, I learned the origins of Java, its development, and the way it is used in practical applications. I understood that programming languages are diverse, and each language can be applied depending on the type of problem or solution required. This highlighted the importance of selecting the appropriate language for specific tasks.",
+        "I realized that learning Java requires patience and continuous practice to fully grasp its concepts. Object-Oriented Programming (OOP) in Java, including principles such as classes, inheritance, polymorphism, and encapsulation, demands consistent study and application. These topics are essential for building structured and efficient programs.",
+        "Overall, the midterm reinforced the need for discipline, persistence, and adaptability in programming. Mastery of Java and OOP concepts is achieved through repeated practice and a clear understanding of how programming languages serve different problem-solving contexts."
+      ]
     },
-    {
-      "title": "Activity #1 - Variables",
-      "type": "Activity",
-      "status": "Submitted Feb 27, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Activity #2 - Operators",
-      "type": "Activity",
-      "status": "Submitted Feb 27, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Activity #3",
-      "type": "Activity",
-      "status": "Submitted Mar 14, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Activity #4",
-      "type": "Activity",
-      "status": "Submitted Mar 14, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Activity #5: Personal Expense Tracker",
-      "type": "Activity",
-      "status": "Submitted Apr 10, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Midterm Quiz #1",
-      "type": "Quiz",
-      "score": "26 / 30 pts"
-    },
-    {
-      "title": "Midterm Quiz #2",
-      "type": "Quiz",
-      "score": "42 / 45 pts"
-    },
-    {
-      "title": "Midterm Assigment #1 - Introduction to Java",
-      "type": "Assignment",
-      "status": "Submitted Feb 17, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Seatwork #3: Student Age",
-      "type": "Seatwork",
-      "status": "Submitted Mar 24, 2026",
-      "score": "Pendings"
-    },
-    {
-      "title": "Midterm Seatwork #2",
-      "type": "Seatwork",
-      "status": "Submitted (Onsite)",
-      "score": "Pendings"
-    },
-    {
-      "title": "Midterm Seatwork #1",
-      "type": "Seatwork",
-      "status": "Submitted (Onsite)",
-      "score": "Pendings"
+    "quizzes": [
+      {
+        "title": "Midterm Quiz #1",
+        "score": "26 / 30 pts",
+        "type": "Screenshot",
+        "fileName": "quiz1.png",
+        "explanation": "Fundamental concepts of Java programming and syntax."
+      },
+      {
+        "title": "Midterm Quiz #2",
+        "score": "42 / 45 pts",
+        "type": "Screenshot",
+        "fileName": "quiz2.png",
+        "explanation": "Advanced topics including classes, objects, and basic OOP principles."
+      }
+    ],
+    "assignments": [
+      {
+        "title": "Midterm Assigment #1 - Introduction to Java",
+        "score": "Pendings",
+        "status": "Submitted Feb 17, 2026",
+        "type": "Pdf file",
+        "fileLink": "https://drive.google.com/file/d/1VDGcbt-TMrdmW1cIK7TJi8SFS1oubnp8/view?usp=drive_link",
+        "explanation": "Initial research and setup for Java development environment."
+      }
+    ],
+    "seatworks": [
+      {
+        "title": "Midterm Seatwork #1",
+        "score": "Pendings",
+        "status": "Submitted (Onsite)",
+        "type": "Screenshot",
+        "fileName": "seatwork1.png",
+        "explanation": "Onsite implementation of basic Java logic."
+      },
+      {
+        "title": "Midterm Seatwork #2",
+        "score": "Pendings",
+        "status": "Submitted (Onsite)",
+        "type": "Screenshot",
+        "fileName": "seatwork2.png",
+        "explanation": "Onsite implementation of advanced control structures."
+      },
+      {
+        "title": "Seatwork #3: Student Age",
+        "score": "Pendings",
+        "status": "Submitted Mar 24, 2026",
+        "type": "Pdf file",
+        "fileLink": "https://drive.google.com/file/d/1VV7o72zQhhkPsTXwZo7d_LCym5GsrXuC/view?usp=drive_link",
+        "explanation": "Implementation of Scanner class for age calculation."
+      }
+    ],
+    "activities": [
+      {
+        "title": "All About Me",
+        "score": "30",
+        "status": "Submitted Feb 17, 2026",
+        "type": "Screenshot",
+        "fileName": "aboutme.png",
+        "explanation": "Introductory activity to Java and user output."
+      },
+      {
+        "title": "Activity #1 - Variables",
+        "score": "Pendings",
+        "status": "Submitted Feb 27, 2026",
+        "type": "Pdf File",
+        "fileLink": "https://drive.google.com/file/d/1bK7kOfQ4fB93It3yDTzkTSXF7dhWxac_/view?usp=drive_link",
+        "explanation": "Working with different data types and variable declarations."
+      },
+      {
+        "title": "Activity #2 - Operators",
+        "score": "Pendings",
+        "status": "Submitted Feb 27, 2026",
+        "type": "Pdf File",
+        "fileLink": "https://drive.google.com/file/d/1sIojmZ-CMWCKL0IeRcyx4xfw26PrHf9N/view?usp=drive_link",
+        "explanation": "Using arithmetic, logical, and relational operators."
+      },
+      {
+        "title": "Activity #3",
+        "score": "Pendings",
+        "status": "Submitted Mar 14, 2026",
+        "type": "Pdf file",
+        "fileLink": "https://drive.google.com/file/d/11G6rydU33ZTgauH3xo53Uc1w1yKyi83X/view?usp=drive_link",
+        "explanation": "Implementation of decision structures."
+      },
+      {
+        "title": "Activity #4",
+        "score": "Pendings",
+        "status": "Submitted Mar 14, 2026",
+        "type": "Pdf file",
+        "fileLink": "https://drive.google.com/file/d/1Vi7VixWp_6cQIjhyX_ZJWYLWvHF6iiOi/view?usp=drive_link",
+        "explanation": "Complex decision structures and nested logic."
+      },
+      {
+        "title": "Activity #5: Personal Expense Tracker",
+        "score": "Pendings",
+        "status": "Submitted Apr 10, 2026",
+        "type": "Pdf file",
+        "fileLink": "https://drive.google.com/file/d/1o3g4k35YkzJVIiDCvR-DizrO9gOIUjrv/view?usp=drive_link",
+        "explanation": "Practical application of variables, operators, and control flow."
+      }
+    ],
+    "exam": {
+      "title": "Midterm Exam",
+      "score": "Pending",
+      "type": "Screenshot",
+      "fileName": "exam.png",
+      "explanation": "Midterm assessment covering all topics from Introduction to Java to OOP basics."
     }
-  ],
-  "reflection": {
-    "title": "Midterm Reflection",
-    "semester": "Midterm Semester 2025-2026",
-    "quote": "Mastery of Java and OOP concepts is achieved through repeated practice and a clear understanding of how programming languages serve different problem-solving contexts.",
-    "content": [
-      "In this midterm, I learned the origins of Java, its development, and the way it is used in practical applications. I understood that programming languages are diverse, and each language can be applied depending on the type of problem or solution required. This highlighted the importance of selecting the appropriate language for specific tasks.",
-      "I realized that learning Java requires patience and continuous practice to fully grasp its concepts. Object-Oriented Programming (OOP) in Java, including principles such as classes, inheritance, polymorphism, and encapsulation, demands consistent study and application. These topics are essential for building structured and efficient programs.",
-      "Overall, the midterm reinforced the need for discipline, persistence, and adaptability in programming. Mastery of Java and OOP concepts is achieved through repeated practice and a clear understanding of how programming languages serve different problem-solving contexts."
-    ]
   },
   "socials": [
-    {
-      "name": "LinkedIn",
-      "icon": "fab fa-linkedin-in",
-      "link": "https://www.linkedin.com/in/fahad-hadji-esmael/",
-      "color": "#0077b5"
-    },
-    {
-      "name": "Facebook",
-      "icon": "fab fa-facebook-f",
-      "link": "https://www.facebook.com/r7hanj/",
-      "color": "#1877f2"
-    },
-    {
-      "name": "GitHub",
-      "icon": "fab fa-github",
-      "link": "https://github.com/Hanji-exe",
-      "color": "#333"
-    }
+    { "name": "LinkedIn", "icon": "fab fa-linkedin-in", "link": "https://www.linkedin.com/in/fahad-hadji-esmael/" },
+    { "name": "Facebook", "icon": "fab fa-facebook-f", "link": "https://www.facebook.com/r7hanj/" },
+    { "name": "GitHub", "icon": "fab fa-github", "link": "https://github.com/Hanji-exe" }
   ]
 }

@@ -232,3 +232,5 @@
         width: 100%;
     }
 }
+
+.academic-info { margin-bottom: 2rem; border-left: 2px solid var(--primary); padding-left: 1.5rem; } .school-name { font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: var(--text-main); font-weight: 600; margin-bottom: 0.2rem; } .section-name { font-size: 0.9rem; color: var(--text-muted); letter-spacing: 0.1em; }

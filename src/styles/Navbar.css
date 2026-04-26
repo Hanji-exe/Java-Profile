@@ -124,3 +124,5 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+.nav-link.active-link { color: var(--text-main); } .nav-link.active-link::after { width: 100%; }

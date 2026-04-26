@@ -5,7 +5,7 @@ const Connect = () => {
     const { socials, personal } = portfolioData;
 
     return (
-        <section id="connect" className="connect-section reveal">
+        <section id="contact" className="connect-section reveal" style={{ paddingTop: '160px', minHeight: '100vh' }}>
             <h2 className="section-title">Connect with Me</h2>
             <p className="connect-subtitle">Feel free to reach out for collaborations or just a friendly chat.</p>
 
