@@ -1,0 +1,46 @@
+:root {
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  background: var(--glass-bg);
+  border-radius: 4px;
+  color: var(--primary);
+}
+
+::selection {
+  background: var(--primary-glow);
+  color: var(--primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}

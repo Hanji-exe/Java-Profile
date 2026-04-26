@@ -1,0 +1,135 @@
+{
+  "personal": {
+    "firstName": "Fahad",
+    "lastName": "Hadji Esmael",
+    "title": "2nd Year BSIT Student",
+    "university": "Polytechnic University of the Philippines",
+    "bio": "I'm a 2nd-year BSIT student at PUP who enjoys coding and learning new technologies. I'm passionate about software development and continuously improving my skills in Java and OOP concepts. I aim to become a full-stack developer in the future.",
+    "avatar": "/placeholder-avatar.png",
+    "education": {
+      "school": "Polytechnic University of the Philippines",
+      "degree": "BS Information Technology",
+      "period": "2024 – Present"
+    }
+  },
+  "navLinks": [
+    {
+      "name": "About",
+      "href": "#about"
+    },
+    {
+      "name": "Activities",
+      "href": "#activities"
+    },
+    {
+      "name": "Reflection",
+      "href": "#reflection"
+    },
+    {
+      "name": "Connect",
+      "href": "#connect"
+    }
+  ],
+  "activities": [
+    {
+      "title": "All About Me",
+      "type": "Activity",
+      "status": "Submitted Feb 17, 2026",
+      "score": "30"
+    },
+    {
+      "title": "Activity #1 - Variables",
+      "type": "Activity",
+      "status": "Submitted Feb 27, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Activity #2 - Operators",
+      "type": "Activity",
+      "status": "Submitted Feb 27, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Activity #3",
+      "type": "Activity",
+      "status": "Submitted Mar 14, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Activity #4",
+      "type": "Activity",
+      "status": "Submitted Mar 14, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Activity #5: Personal Expense Tracker",
+      "type": "Activity",
+      "status": "Submitted Apr 10, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Midterm Quiz #1",
+      "type": "Quiz",
+      "score": "26 / 30 pts"
+    },
+    {
+      "title": "Midterm Quiz #2",
+      "type": "Quiz",
+      "score": "42 / 45 pts"
+    },
+    {
+      "title": "Midterm Assigment #1 - Introduction to Java",
+      "type": "Assignment",
+      "status": "Submitted Feb 17, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Seatwork #3: Student Age",
+      "type": "Seatwork",
+      "status": "Submitted Mar 24, 2026",
+      "score": "Pendings"
+    },
+    {
+      "title": "Midterm Seatwork #2",
+      "type": "Seatwork",
+      "status": "Submitted (Onsite)",
+      "score": "Pendings"
+    },
+    {
+      "title": "Midterm Seatwork #1",
+      "type": "Seatwork",
+      "status": "Submitted (Onsite)",
+      "score": "Pendings"
+    }
+  ],
+  "reflection": {
+    "title": "Midterm Reflection",
+    "semester": "Midterm Semester 2024-2025",
+    "quote": "Mastery of Java and OOP concepts is achieved through repeated practice and a clear understanding of how programming languages serve different problem-solving contexts.",
+    "content": [
+      "In this midterm, I learned the origins of Java, its development, and the way it is used in practical applications. I understood that programming languages are diverse, and each language can be applied depending on the type of problem or solution required. This highlighted the importance of selecting the appropriate language for specific tasks.",
+      "I realized that learning Java requires patience and continuous practice to fully grasp its concepts. Object-Oriented Programming (OOP) in Java, including principles such as classes, inheritance, polymorphism, and encapsulation, demands consistent study and application. These topics are essential for building structured and efficient programs.",
+      "Overall, the midterm reinforced the need for discipline, persistence, and adaptability in programming. Mastery of Java and OOP concepts is achieved through repeated practice and a clear understanding of how programming languages serve different problem-solving contexts."
+    ]
+  },
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin-in",
+      "link": "https://www.linkedin.com/in/fahad-hadji-esmael/",
+      "color": "#0077b5"
+    },
+    {
+      "name": "Facebook",
+      "icon": "fab fa-facebook-f",
+      "link": "https://www.facebook.com/r7hanj/",
+      "color": "#1877f2"
+    },
+    {
+      "name": "GitHub",
+      "icon": "fab fa-github",
+      "link": "https://github.com/Hanji-exe",
+      "color": "#333"
+    }
+  ]
+}

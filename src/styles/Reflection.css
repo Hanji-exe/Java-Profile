@@ -1,0 +1,82 @@
+.reflection-section {
+    position: relative;
+}
+
+.reflection-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reflection-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: 40px;
+    padding: 4rem;
+    position: relative;
+    text-align: left;
+    transition: var(--transition-smooth);
+}
+
+.reflection-card:hover {
+    border-color: var(--primary-glow);
+    box-shadow: var(--shadow-premium);
+}
+
+.quote-icon {
+    font-size: 3.5rem;
+    color: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+
+.reflection-text {
+    font-size: 1.25rem;
+    line-height: 2;
+    color: var(--text-main);
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+}
+
+.reflection-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reflection-author {
+    text-align: right;
+}
+
+.reflection-author h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.reflection-author p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .reflection-card {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .quote-icon {
+        font-size: 2.5rem;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    .reflection-text {
+        font-size: 1.1rem;
+    }
+}

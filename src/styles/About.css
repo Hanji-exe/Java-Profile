@@ -1,0 +1,234 @@
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 160px 20px 80px;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* Image Side */
+.hero-image-side {
+    position: relative;
+    width: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+    aspect-ratio: 4/5;
+    border: 1px solid var(--glass-border);
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%; /* Focusing more on the upper part/face */
+    transition: var(--transition-smooth);
+}
+
+.hero-image-side:hover .hero-img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 60%, var(--bg-deep) 100%);
+    z-index: 2;
+}
+
+.hero-glow {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+    z-index: 1;
+    filter: blur(40px);
+}
+
+/* Content Side */
+.hero-content-side {
+    text-align: left;
+}
+
+.hero-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin-bottom: 2rem;
+    display: block;
+    white-space: nowrap;
+}
+
+.last-name {
+    color: var(--primary);
+}
+
+.hero-tagline {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tag-line {
+    width: 50px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.hero-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.hero-bio {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    max-width: 550px;
+}
+
+.hero-education {
+    margin-bottom: 4rem;
+}
+
+.edu-minimal-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.edu-minimal-card i {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.edu-details h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.edu-details p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* CTA Buttons */
+.hero-cta {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cta-button {
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.cta-button.primary {
+    background: var(--primary);
+    color: var(--bg-deep);
+    box-shadow: 0 10px 30px -10px var(--primary-glow);
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px -10px var(--primary-glow);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+}
+
+.cta-button.secondary:hover {
+    background: var(--glass-bg);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .hero-content-side {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-name {
+        font-size: 4.5rem;
+    }
+
+    .last-name {
+        margin-left: 0;
+    }
+
+    .hero-tagline {
+        justify-content: center;
+    }
+
+    .hero-image-side {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 3.5rem;
+        white-space: normal;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}

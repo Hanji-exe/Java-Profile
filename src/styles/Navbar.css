@@ -1,0 +1,126 @@
+.navbar {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    z-index: 1000;
+    transition: var(--transition-smooth);
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+}
+
+.navbar.scrolled {
+    background: rgba(10, 12, 16, 0.8);
+    border-color: var(--primary-glow);
+    box-shadow: var(--shadow-premium);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+}
+
+.navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--text-main);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-main);
+    transition: var(--transition-smooth);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 1rem;
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .navbar-links {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-deep);
+        width: 100%;
+        text-align: center;
+        transition: 0.4s;
+        padding: 2rem 0;
+        border-bottom: 1px solid var(--glass-border);
+    }
+
+    .navbar-links.active {
+        top: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
