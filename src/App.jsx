@@ -44,7 +44,7 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/midterm" element={<Midterm />} />
           <Route path="/final" element={<Final />} />
-          <Route path="/contact" element={<Connect />} />
+          <Route path="/connect" element={<Connect />} />
         </Routes>
       </main>
     </div>

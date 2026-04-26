@@ -27,7 +27,7 @@ const Connect = () => {
             </div>
 
             <footer className="footer-credits">
-                <p>© 2025 {personal.firstName} {personal.lastName} | <span>{personal.education.degree}</span> – Midterm Portfolio</p>
+                <p>© 2025 {personal.firstName} {personal.lastName} | <span>{personal.course}</span> – Midterm Portfolio</p>
 
             </footer>
         </section>

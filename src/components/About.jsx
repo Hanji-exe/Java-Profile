@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import portfolioData from '../data/portfolioData.json';
 import '../styles/About.css';
 
@@ -35,8 +36,8 @@ const About = () => {
                     </p>
 
                     <div className="hero-cta">
-                        <a href="/midterm" className="cta-button primary">Explore Midterm Page</a>
-                        <a href="/contact" className="cta-button secondary">Contact Info</a>
+                        <Link to="/midterm" className="cta-button primary">Explore Midterm Page</Link>
+                        <Link to="/connect" className="cta-button secondary">Contact Info</Link>
                     </div>
                 </div>
             </div>

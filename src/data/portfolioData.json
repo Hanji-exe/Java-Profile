@@ -4,17 +4,29 @@
     "lastName": "Hadji Esmael",
     "course": "Object-Oriented Programming",
     "school": "Polytechnic University of the Philippines",
-    "section": "BSIT 2-1",
+    "section": "BSIT 2-2N",
     "title": "IT Student & Aspiring Developer",
     "intro": "This e-portfolio presents my Midterm Project in Object-Oriented Programming. It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts through Java implementation.",
     "bio": "I'm a 2nd-year BSIT student at PUP who enjoys coding and learning new technologies. I'm passionate about software development and continuously improving my skills in Java and OOP concepts. I aim to become a full-stack developer in the future.",
     "avatar": "/biggerphoto.png"
   },
   "navLinks": [
-    { "name": "Home", "href": "/" },
-    { "name": "Midterm", "href": "/midterm" },
-    { "name": "Final", "href": "/final" },
-    { "name": "Contact", "href": "/contact" }
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Midterm",
+      "href": "/midterm"
+    },
+    {
+      "name": "Final",
+      "href": "/final"
+    },
+    {
+      "name": "Contact",
+      "href": "/connect"
+    }
   ],
   "midterm": {
     "reflection": {
@@ -138,8 +150,20 @@
     }
   },
   "socials": [
-    { "name": "LinkedIn", "icon": "fab fa-linkedin-in", "link": "https://www.linkedin.com/in/fahad-hadji-esmael/" },
-    { "name": "Facebook", "icon": "fab fa-facebook-f", "link": "https://www.facebook.com/r7hanj/" },
-    { "name": "GitHub", "icon": "fab fa-github", "link": "https://github.com/Hanji-exe" }
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin-in",
+      "link": "https://www.linkedin.com/in/fahad-hadji-esmael/"
+    },
+    {
+      "name": "Facebook",
+      "icon": "fab fa-facebook-f",
+      "link": "https://www.facebook.com/r7hanj/"
+    },
+    {
+      "name": "GitHub",
+      "icon": "fab fa-github",
+      "link": "https://github.com/Hanji-exe"
+    }
   ]
 }
