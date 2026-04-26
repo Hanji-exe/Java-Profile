@@ -21,7 +21,7 @@ const Midterm = () => {
             const id = getDriveId(item.fileLink);
             return id ? `https://lh3.googleusercontent.com/d/${id}=s400` : null;
         }
-        return item.fileName ? `/public/${item.fileName}` : null;
+        return item.fileName ? `/${item.fileName}` : null;
     };
 
     const renderAcademicCard = (item) => {
